@@ -2,7 +2,7 @@ interface HomeProps {
   setPantalla: React.Dispatch<React.SetStateAction<string>>;
 }
 
-export default function Home({ setPantalla }: HomeProps) {
+export default function Inicio({}: HomeProps) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-400 to-green-600 text-white flex flex-col items-center justify-center px-4 py-20">
       <div className="text-center max-w-2xl">

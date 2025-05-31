@@ -1,7 +1,7 @@
 import { useState } from "react";
 import About from "./components/about";
 import Contact from "./components/contact";
-import Home from "./components/home"; // Asegúrate de que esté en la ruta correcta
+import Home from "./components/Home"; // Asegúrate de que esté en la ruta correcta
 
 export default function App() {
   const [pantalla, setPantalla] = useState("inicio");
@@ -26,7 +26,9 @@ export default function App() {
 
       {/* Contenido dinámico */}
       <main className="p-6">
-        {pantalla === "inicio" && <Home setPantalla={setPantalla} />}
+        {pantalla === "inicio" && <Home setPantalla={function (): void {
+          throw new Error("Function not implemented.");
+        } } />}
         {pantalla === "about" && <About />}
         {pantalla === "contact" && <Contact />}
       </main>
